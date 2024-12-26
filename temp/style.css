@@ -1,0 +1,81 @@
+/* Resetting margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    padding: 20px;
+    background-color: #ff7f50;
+    text-align: center;
+    color: white;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+}
+
+/* Parallax effect */
+.parallax {
+    background-image: url('your-background-image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+/* Chart section */
+#chart-section {
+    margin: 20px 0;
+    height: 300px;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (min-width: 576px) {
+    /* Small devices (landscape phones, 576px and up) */
+}
+
+@media (min-width: 768px) {
+    /* Medium devices (tablets, 768px and up) */
+}
+
+@media (min-width: 992px) {
+    /* Large devices (desktops, 992px and up) */
+    /* Adjusting padding and layout for larger screens */
+    header, footer {
+        padding: 30px;
+    }
+    
+    section {
+        padding: 30px;
+    }
+    
+    #chart-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Extra large devices (large desktops, 1200px and up) */
+    /* You can further adjust styles for very large screens if necessary */
+}
