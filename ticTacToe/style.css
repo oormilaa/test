@@ -1,0 +1,91 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #050505,#030303);
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+
+}
+.wrapper
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top : 50%;
+    left: 50%;
+    
+   
+}
+.container{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+.button-option
+{
+    background: rgb(118, 148, 168);
+    height: 22vmin;
+    width: 22vmin;
+    border: navy;
+    border-radius: 6%;
+    font-size: 15vmin;
+    color:rgb(10, 10, 9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0, 1);
+
+}
+#restart{
+    background:#b81c08 ;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    font-style:italic;
+    color: white;
+    border: chartreuse;
+    transition: all .2s ease-in-out;
+    position: relative;
+    margin: 1.5em auto 0 auto ;
+    display:block;
+}
+.popup{
+    background: linear-gradient(135deg, #c71d1d,#0e0000);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:  1em;
+    font-size: 12vmin;
+}
+#new-game{
+    background:linear-gradient(#fffffff1 ,#000000 );
+    border-radius:.5rem;
+    padding: 1rem;
+    color: black;
+    font-weight: bold;
+    border-radius: 5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#message{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1em;
+
+}
+.popup.hide
+{
+    display: none;
+    
+}
