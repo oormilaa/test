@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "block"
+      },
+      "condition": {
+        "urlFilter": "*://*.ads.example.com/*",
+        "resourceTypes": ["script", "sub_frame"]
+      }
+    },
+    {
+      "id": 2,
+      "priority": 2,
+      "action": {
+        "type": "block"
+      },
+      "condition": {
+        "urlFilter": "*://*.youtube.com/*",
+        "resourceTypes": ["script", "sub_frame"]
+      }
+    }
+  ]
+  
