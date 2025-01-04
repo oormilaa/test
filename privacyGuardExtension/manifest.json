@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Privacy Guard",
+    "version": "1.2",
+    "description": "Alerts users when personal data is being requested, blocks ads, and tracks time spent on websites.",
+    "permissions": [
+      "cookies",
+      "webRequest",
+      "notifications",
+      "storage",
+      "webRequestBlocking",
+      "<all_urls>",
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["youtube-ad-blocker.js"]
+      }
+    ]
+  }
+  
