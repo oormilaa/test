@@ -1,7 +1,7 @@
 let currentTabId = null;
 let siteStartTime = null;
 
-const saveTimeSpent = async (domain, timeSpent) => {
+const saveTimeSpent = async (domain, timespent) => {
   chrome.storage.sync.get(["timeSpent"], (result) => {
     const timeData = result.timeSpent || {};
     timeData[domain] = (timeData[domain] || 0) + timeSpent;
